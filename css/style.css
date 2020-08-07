@@ -400,7 +400,8 @@ img {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-clients-item:hover {
+.container-clients-item:hover,
+.footer-mail:hover {
   border-color: var(--accent-color);
 }
 .container-clients-item:hover .svg-icon-logo1,
@@ -429,8 +430,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.div-text-footer,
-.div-text-footer-write {
+.div-text-footer {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -479,25 +479,23 @@ img {
 .container-social {
   margin-top: 20px;
 }
+input {
+  font-family: inherit;
+}
 .div-text-footer-write {
+  position: relative;
   display: flex;
-  width: 570px;
   height: 86px;
-  padding: 0px;
   margin-top: 20px;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.footer-mail-write {
-  position: relative;
+  align-content: space-between;
 }
 .div-text-footer-write .hero-button {
   width: 195px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   padding: 10px 20px;
   background-image: url("../images/svg/iconsend.svg");
@@ -506,38 +504,41 @@ img {
   background-size: 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mail {
+  max-width: 358px;
   margin: 0;
   padding: 15px;
-  font: inherit;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
   padding-left: 16px;
   margin-right: 12px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-form-label {
+
+.footer-mail:focus:hover {
+  border-color: var(--accent-color);
+  color: var(--link-text-color);
+  cursor: pointer;
+}
+.footer-mail:focus:required:invalid {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.div-text-footer-write .contact-form-label {
   position: absolute;
   left: 15px;
   top: 15px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  text-align: start;
-  background-color: #2f303a;
   color: rgba(255, 255, 255, 0.3);
-  text-transform: uppercase;
 }
 .container .portfolio,
 .container .osob-container,
