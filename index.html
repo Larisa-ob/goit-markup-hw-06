@@ -559,23 +559,31 @@
         <h2 class="modal-form-title">Оставьте свои данные,мы вам перезвоним</h2>
         <button data-modal-close type="button" class="modal-close-btn">X</button>
         <div class="modal-form-input-wrapper">
-          <input type="text" name="user-name" id="user-modal-name" class="modal-form-input" placeholder=" "
-            required>
+          <input type="text" name="user-name" id="user-modal-name" class="modal-form-input" placeholder=" ">
           <label class="modal-form-label" for="user-modal-name">Имя*</label>
+          <svg class="icon-modal" width="12px" height="12px">   
+            <use href="../images/symbol-defs.svg#person-black"></use>
+          </svg>
         </div>    
         <div class="modal-form-input-wrapper">
           <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" " required>
           <label for="user-modal-tel" class="modal-form-label">Телефон*</label>
+          <svg class="icon-modal" width="18px" height="18px">
+            <use href="../images/symbol-defs.svg#phone-black"></use>
+          </svg>
         </div>
         <div class="modal-form-input-wrapper">
           <input type="email" name="user-meil" id="user-modal-mail" class="modal-form-input" placeholder=" " required>
           <label for="user-modal-mail" class="modal-form-label">E-mail*</label>
+          <svg class="icon-modal" width="18px" height="18px">
+            <use href="../images/symbol-defs.svg#mail-modal"></use>
+          </svg>
         </div>    
-        <textarea name="user-message" class="modal-form-message" placeholder="Сообщение"></textarea>
+        <textarea name="user-message" class="modal-form-message" placeholder="Коментарий"></textarea>
         <label class="modal-form-option-label">
           <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
           <span class="modal-form-custom-checkbox"></span>
-          <span class="modal-form-option-span">Я согласен с <a href="#">политикой коинфеинденциальности</a></span>
+          <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
         </label>
         <button type="submit" class="modal-form-btn">Отправить</button>
       </form>
