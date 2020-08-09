@@ -352,8 +352,20 @@
         <div class="div-text-footer">
           <b>подпишитесь на рассылку</b>
           <div class="div-text-footer-write">
-            <a class="footer-mail-write">E-mail</a>
-            <button class="hero-button primary">Подписаться</button>
+            <form class="footer-mail-write" autocomplete="off">
+              <input
+                type="email"
+                name="user-mail"
+                class="footer-mail"
+                id="user-mail"
+                placeholder="E-mail*"
+                required
+              />
+              <label for="user-mail" class="contact-form-label"></label>
+              <button type="submit" class="hero-button primary">
+                Подписаться
+              </button>
+            </form>
           </div>
         </div>
       </div>
