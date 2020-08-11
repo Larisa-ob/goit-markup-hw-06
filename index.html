@@ -597,11 +597,17 @@
             <use href="./images/symbol-defs.svg#mail-modal"></use>
           </svg>
         </div>
-        <textarea
-          name="user-message"
-          class="modal-form-message"
-          placeholder="Коментарий"
-        ></textarea>
+        <div class="modal-form-input-wrapper">
+          <textarea
+            name="user-message"
+            id="modal-massange-label"
+            class="modal-form-message"
+            placeholder=" "
+          ></textarea>
+          <label for="modal-massange-label" class="modal-massange-label"
+            >Комментарий</label
+          >
+        </div>
         <label class="modal-form-option-label">
           <input
             type="checkbox"

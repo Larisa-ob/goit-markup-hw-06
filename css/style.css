@@ -731,6 +731,7 @@ input {
   transition-duration: 250ms;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   color: var(--accent-color);
@@ -741,6 +742,7 @@ input {
   fill: var(--accent-color);
 }
 .modal-form-message {
+  position: relative;
   display: block;
   width: 100%;
   height: 120px;
@@ -754,6 +756,15 @@ input {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   border: 1px solid rgba(157, 164, 189, 0.4);
+}
+.modal-massange-label {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) opacity 250ms
+    cubic-beziercubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .modal-form-input:hover,
 .modal-form-message:hover {
@@ -770,11 +781,14 @@ input {
   border-color: var(--accent-color);
   cursor: pointer;
 }
+.modal-form-message:focus + .modal-massange-label,
 .modal-form-input:focus + .modal-form-label,
-.modal-form-input:not(:placeholder-shown) + .modal-form-label {
+.modal-form-input:not(:placeholder-shown) + .modal-form-label,
+.modal-form-message:not(:placeholder-shown) + .modal-massange-label {
   transform: translate(-46px, -40px);
   color: var(--accent-color);
 }
+
 .modal-form-checkbox {
   position: absolute;
   width: 1px;
