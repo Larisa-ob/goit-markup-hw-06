@@ -785,7 +785,7 @@ input {
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label,
 .modal-form-message:not(:placeholder-shown) + .modal-massange-label {
-  transform: translate(-46px, -40px);
+  transform: translate(-16px, -40px);
   color: var(--accent-color);
 }
 
